@@ -14,9 +14,20 @@ const createUser = async (user: IUser): Promise<User> => {
     return newUser;
 }
 
-const deleteUser = async (id: number): Promise<void> => { 
+const deleteUser = async (id: number): Promise<void> => {
     await userRepository.delete(id);
     return;
 }
 
-export default { getUsers, createUser, deleteUser };
+const updateUser = async (user: IUser): Promise<User> => {
+    const updateUser = await userRepository.save(user);
+    await userRepository.save(updateUser);
+    return updateUser;
+}
+
+const findOne = async (id: number): Promise<User | null> => {
+    const user = await userRepository.findOne({ where: { id } });
+    return user || null;
+}
+
+export default { getUsers, createUser, deleteUser, updateUser, findOne };

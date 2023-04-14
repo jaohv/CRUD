@@ -22,4 +22,20 @@ userRouter.delete('/', async (req: Request, res: Response): Promise<Response> =>
      return res.status(200).send(UserDeleted);
 });
 
+userRouter.put('/:id', async (req: Request, res: Response): Promise<Response> => {
+     const id = Number(req.params.id);
+     const data = req.body;
+     const user = await UserRepository.findOne(id);
+
+     if (!user) {
+          return res.status(404).send('User not found');
+     }
+
+     user.name = data.name;
+     user.email = data.email;
+
+     const UserUpdated = await UserRepository.updateUser(user);
+     return res.status(200).send(UserUpdated);
+})
+
 export default userRouter;
