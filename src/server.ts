@@ -1,11 +1,11 @@
-import "reflect-metadata"
-import express from "express"
-import cors from "cors"
-import { AppDataSource } from "./database/data-source"
+import "reflect-metadata";
+import express from "express";
+import cors from "cors";
+import { AppDataSource } from "./database/data-source";
 
-const app = express()
+const app = express();
 
-app.use(cors())
+app.use(cors());
 
 app.use(express.json())
 
