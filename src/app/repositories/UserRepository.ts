@@ -8,4 +8,15 @@ const getUsers = (): Promise<IUser[]> => {
     return userRepository.find()
 }
 
-export default { getUsers };
+const createUser = async (user: IUser): Promise<User> => {
+    const newUser = await userRepository.create(user);
+    await userRepository.save(newUser);
+    return newUser;
+}
+
+const deleteUser = async (id: number): Promise<void> => { 
+    await userRepository.delete(id);
+    return;
+}
+
+export default { getUsers, createUser, deleteUser };
