@@ -34,7 +34,7 @@ npm install
 
 ## Como usar o projeto de CRUD
 
-####1. Digite os seguinte comando:s
+#### 1. Digite os seguinte comando:s
 
 ```
 npm run dev:server
