@@ -19,27 +19,33 @@ O projeto possui as seguintes funcionalidades:
 - Listar todos os itens cadastrados
 
 ##Como instalar
+- Abra o seu terminal e digite os seguintes comandos:
 
 ```
 git clone https://github.com/jaohv/project_crud.git
 cd project_crud
 npm install
 ```
+- Vá até o arquivo `database/data-source.ts`
 
-####Rodar o servidor
 
-```
-  npm run dev:server
-```
+- Altere o `username`, `password` e `database` de acordo com as suas informações
+
 
 ## Como usar o projeto de CRUD
 
+####1. Digite os seguinte comando:s
 
-#### 1. Abra o cliente de API de sua preferência
+```
+npm run dev:server
+npm typeorm migration:run
+```
+
+#### 2. Abra o cliente de API de sua preferência
 
 Abra o cliente de API de sua preferência (Exemplo: Insomnia, Postman, etc)
 
-#### 2. Crie um HTPP Request para cada uma dos métodos (POST, GET, PUT, DELETE)
+#### 3. Crie um HTPP Request para cada uma dos métodos (POST, GET, PUT, DELETE)
 
 Crie um HTPP Request para cada uma dos métodos disponíveis no projeto:
 
