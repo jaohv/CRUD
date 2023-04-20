@@ -18,7 +18,7 @@ O projeto possui as seguintes funcionalidades:
 - Excluir um item da lista
 - Listar todos os itens cadastrados
 
-##Como instalar
+## Como instalar
 - Abra o seu terminal e digite os seguintes comandos:
 
 ```
