@@ -1,4 +1,4 @@
-#CRUD
+# CRUD
 
 Este é um projeto de CRUD (Create, Read, Update, Delete) que desenvolvi para fins de estudo. Comecei a desenvolver como intuito de aprimorar meus conhecimentos em TypeORM.
 
