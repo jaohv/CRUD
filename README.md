@@ -37,8 +37,8 @@ npm install
 #### 1. Digite os seguinte comandos:
 
 ```
+npx typeorm migration:run
 npm run dev:server
-npm typeorm migration:run
 ```
 
 #### 2. Abra o cliente de API de sua preferência
