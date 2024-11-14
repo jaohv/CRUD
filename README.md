@@ -22,7 +22,7 @@ O projeto possui as seguintes funcionalidades:
 - Abra o seu terminal e digite os seguintes comandos:
 
 ```
-git clone https://github.com/jaohv/project_crud.git
+git clone https://github.com/jaohv/CRUD.git
 cd project_crud
 npm install
 ```
